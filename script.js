@@ -84,8 +84,8 @@ function openSuccessPage() {
     // لو حابب تشغل الاحتفالات شيل علامتين الـ //
     // launchCelebration();
 
-    card.innerHTML = `
-        <div class="emoji-icon" style="font-size: 50px; margin-bottom: 5px;">🥰</div>
+card.innerHTML = `
+        <div class="name-highlight">MY LOVE</div>
         <div class="success-box">
             <h2 class="romantic-title">كنت عارف إنك مش هتزعلي مني ❤️</h2>
             <h3 class="romantic-subtitle">وكمان مرة أنا آسف لو زعلتك مني</h3>
@@ -101,39 +101,58 @@ function openSuccessPage() {
                 <div class="memory-card">
                     <div class="memory-header">
                         <span class="memory-title">أول مرة نخرج فيها 🌸</span>
-                        <span class="memory-date">15 / 8 / 2023</span>
+                        <span class="memory-date">15 / 8 / 2024</span>
                     </div>
                     <div class="memories-gallery">
                         <img src="1.jpg" alt="صورة">
                         <img src="2.jpg" alt="صورة">
-                        <img src="image3.jpg" alt="صورة">
+                        <img src="3.jpg" alt="صورة">
                     </div>
                 </div>
 
                 <!-- الكارت التاني -->
                 <div class="memory-card">
                     <div class="memory-header">
-                        <span class="memory-title">عيد ميلادك 🎂</span>
-                        <span class="memory-date">10 / 2 / 2024</span>
+                        <span class="memory-title">يوم خطوبتنا 💍</span>
+                        <span class="memory-date">5 / 6 / 2025</span>
                     </div>
                     <div class="memories-gallery">
-                        <img src="image4.jpg" alt="صورة">
-                        <img src="image5.jpg" alt="صورة">
+                        <img src="7.jpg" alt="صورة">
+                        <img src="8.jpg" alt="صورة">
+                        <img src="9.jpg" alt="صورة">
                     </div>
                 </div>
                 
-                <!-- تقدر تنسخ الكارت ده وتكرره لأي عدد من المواقف -->
+                <!-- الكارت التالت -->
                 <div class="memory-card">
                     <div class="memory-header">
-                        <span class="memory-title">موقف مجنون عملناه 😂</span>
-                        <span class="memory-date">5 / 6 / 2024</span>
+                        <span class="memory-title">عيد ميلادك 🎂</span>
+                        <span class="memory-date">10 / 8 / 2025</span>
                     </div>
                     <div class="memories-gallery">
-                        <img src="image6.jpg" alt="صورة">
-                        <img src="image7.jpg" alt="صورة">
+                        <img src="4.jpg" alt="صورة">
+                        <img src="5.jpg" alt="صورة">
+                        <img src="6.jpg" alt="صورة">
                     </div>
                 </div>
 
+                <!-- الكارت الرابع -->
+                <div class="memory-card">
+                    <div class="memory-header">
+                        <span class="memory-title"> يوم مميز بالنسبالنا ❤️</span>
+                        <span class="memory-date">16 / 10 / 2025</span>
+                    </div>
+                    <div class="memories-gallery">
+                        <img src="10.jpg" alt="صورة">
+                        <img src="11.jpg" alt="صورة">
+                        <img src="12.jpg" alt="صورة">
+                    </div>
+                </div>
+
+                <!-- الكارت الختامي -->
+                <div class="final-message-card">
+                    <p class="final-message-text">في النهاية حابب أقولك إنك أحلى حاجة حصلتلي في حياتي، ومش عايزك تزعلي مني خالص لأني هفضل أدور على طريقة أصالحك بيها ❤️</p>
+                </div>
             </div>
         </div>
     `;
