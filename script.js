@@ -20,8 +20,6 @@ const messages = [
     "الزرار بيبعد عشان عارف إنك مش زعلانة! 😂❤️"
 ];
 
-const emojis = ["🥺", "😭", "💔", "😔", "🙈", "👉👈", "🌹", "🥰"];
-
 let msgIndex = 0;
 let noScale = 1;
 
@@ -29,7 +27,6 @@ function moveYesButton(e) {
     const btnYes = document.getElementById('btn-yes');
     const btnNo = document.getElementById('btn-no');
     const msgDiv = document.getElementById('msg');
-    const emojiDiv = document.getElementById('card-emoji');
     const card = document.getElementById('card');
 
     // انفجار قلوب عند موقع الزرار قبل الهروب
@@ -39,9 +36,8 @@ function moveYesButton(e) {
     card.classList.add('shake');
     setTimeout(() => card.classList.remove('shake'), 350);
 
-    // تحديث النصوص
+    // تحديث النصوص بس (شيلنا سطر تحديث الإيموجي من هنا)
     msgDiv.innerText = messages[msgIndex];
-    emojiDiv.innerText = emojis[msgIndex % emojis.length];
     msgIndex = (msgIndex + 1) % messages.length;
 
     // تكبير زرار "لا" تدريجياً ليشجع على الضغط عليه!
@@ -51,7 +47,7 @@ function moveYesButton(e) {
     }
 
     // حركة هروب عشوائية ودوران
-    const maxX = 130;
+    const maxX = 110;
     const maxY = 90;
 
     const randomX = (Math.random() - 0.5) * maxX * 2;
@@ -60,6 +56,8 @@ function moveYesButton(e) {
 
     btnYes.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${randomRot}deg) scale(0.9)`;
 }
+
+// باقي الدوال زي (createBurst) و (openSuccessPage) هتسيبها زي ما هي تحت الكود ده
 
 // تأثير انفجار القلوب المصغرة
 function createBurst(x, y) {
